@@ -1,7 +1,7 @@
 # TODO: change color of background depending on line
 # TODO: Bus
 
-from apikey import key
+import os
 import requests
 from train import Train
 from tkinter import *
@@ -21,7 +21,7 @@ station_name = ""
 route_name = ""
 timer = None
 train_counter = 0
-
+key = os.environ.get("CTA_API_KEY")
 
 # ------------- GET TRAIN DATA ------------- #
 def get_data():
