@@ -9,6 +9,7 @@ class Train:
         self.current_time = train_data["prdt"]
         self.is_app = train_data["isApp"]
         self.is_delay = train_data["isDly"]
+        self.route = train_data["rt"]
         self.arrival_datetime = ""
         self.current_datetime = ""
         self.time_until = ""
